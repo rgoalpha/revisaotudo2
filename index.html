@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 3 - Inelegível</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- -HEAD - -->
+
+<!-- INICIO BODY -->
+<body>
+    <!-- __________INICIO MENU_________ -->
+    <header class="menu">
+        <a href="" class="logo">Patriota CM</a>
+
+        <nav class="navbar">
+            <a href="#" onclick="openPopup()">Projetos Aprovados</a>
+            <a href="#" onclick="openPopup2()">Milicia</a>
+        </nav>
+        
+    </header>
+    <!-- __________FINAL MENU__________ -->
+
+    <div class="home">
+
+        <div class="popup" id="popup">
+            <h2>0 Projetos encontrados</h2>
+            <button type="button" onclick="closePopup()">Sair</button>
+        </div>
+        <div class="popup" id="popup2">
+            <h2>Envia o zap para o 01</h2>
+            <button type="button" onclick="closePopup2()">Sair</button>
+        </div>
+        <div class="popup" id="popup3">
+            <h2>Não tem mais nada</h2>
+            <button type="button" onclick="closePopup2()">Sair</button>
+        </div>
+
+
+        <div class="carrosel">
+            <div class="slides">
+                <!-- _____Radio Buttons_______ -->
+                <input type="radio" name="radio-btn" id="radio0">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- ______Fim Radio Buttons_________ -->
+                
+                <!-- slide imgs -->
+                <div class="slide first">
+                    <img src="/src/img/b1.jpg" alt="" >
+                </div>
+                 <div class="slide">
+                    <img src="/src/img/b2.jpg" alt="" >
+                </div>
+                <div class="slide">
+                    <img src="/src/img/b3.jpg" alt="" >
+                </div>
+                <div class="slide">
+                    <img src="/src/img/b4.jpg" alt="" >
+                </div>
+            <!-- slide imgs -->
+            <!-- Navegação automatica -->
+            <div class="auto">
+                <div class="auto-btn0"></div>
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <!-- Navegação automatica -->            
+        </div>
+        <!-- Navegação Manual -->
+        <div class="manual">
+            <label for="radio0" class="manual-btn"></label>
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+        <!-- Navegação Manual -->
+        </div>
+
+        <div class="carteirada">
+            <h2>Conquistas do Governo Bolsonaro</h2>
+            <div class="iframe first">
+                <iframe id="video1" width="1000" height="480" src="https://www.youtube.com/embed/ALkZsSg9VCA" title="OS BOLSONARISTAS MAIS DOIDÕES DOS BLOQUEIOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <iframe id="video2" width="1000" height="50" src="https://www.youtube.com/embed/PjPE6Q3MBPM" title="IDOSA MANDA BOLSONARO PRO INFERNO APÓS PEGAR OSSOS EM AÇOUGUE: &quot;NO GOVERNO LULA A GENTE PODIA COMER&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
+            
+            <div class="menuVideo">
+                <a href="#"><i class='bx bxs-left-arrow-circle' ></i></a>
+                <a href="#"><i class='bx bxs-right-arrow-circle' ></i></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>

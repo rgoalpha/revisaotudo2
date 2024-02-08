@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;  
+}
+
+.home {
+    background: #0e7a00;
+    height: 100%;   
+}
+
+/* _________MENU_________ */
+.menu{
+    width: 100%;
+    background: #000ceb;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    padding: 15px 15%;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    pointer-events: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px;
+}
+/* _________MENU_________ */
+
+/* ___POPUP____ */
+
+.popup{
+    background: yellow;
+    width: 450px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding:30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 10;
+    color: #fff;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup h2{
+    font-size: 28px;
+    font-weight: 600;
+    text-shadow: #000 1px 1px 3px;
+}
+
+.popup button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: 600;
+    background: #03c30d;
+    color: #fff;
+    text-shadow: #000 1px 1px 3px;
+}
+/* ___________SLides___________ */
+
+.carrosel {
+    margin: 0 auto;
+    width: 1100px;
+    height: 525px;
+    overflow: hidden;
+    background: red;
+    border-radius: 5px;
+}
+
+.slides{
+    width: 400%;
+    height: 525px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1100px;
+    height: 525px;
+}
+
+.manual {
+    position: relative;
+    width: 1100px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:hover{
+    background: #fff;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 50px;
+}
+
+#radio0:checked ~ .first{
+    margin-left: 0;
+}
+#radio1:checked ~ .first{
+    margin-left: -25%;
+}
+#radio2:checked ~ .first{
+    margin-left: -50%;
+}
+#radio3:checked ~ .first{
+    margin-left: -75%;
+}
+
+.auto div{
+    border: 2px solid yellow;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.auto {
+    position: absolute;
+    width: 1100px;
+    margin-top: 485px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.auto div:not(:last-child){
+    margin-right: 50px;
+}
+
+#radio0:checked ~ .auto .auto-btn0{
+    background: yellow;
+}
+#radio1:checked ~ .auto .auto-btn1{
+    background: yellow;
+}
+#radio2:checked ~ .auto .auto-btn2{
+    background: yellow;
+}
+#radio3:checked ~ .auto .auto-btn3{
+    background: yellow;
+}
+
+/* ________________SLIDES____________ */
+
+.carteirada {
+    width: 1100px;
+    height: 700px;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: #ffee00;   
+}
+
+.carteirada h2{
+    font-weight: 800px;
+    color: #fff;
+    text-shadow: #000 1px 1px 5px;
+    text-align: center;
+    padding: 15px;
+    background: #03c30d;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.iframe {
+    width: 1000px;
+    margin: 15px 50px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.iframe iframe{
+    border-radius: 10px;
+}
+
+#video2 {
+    width: 50px;
+    visibility: hidden;
+}
+
+.menuVideo{
+    width: 100%;
+
+    position: relative;
+    text-align: center;
+}
+
+.menuVideo a{
+    font-size: 48px;
+    margin-left: 30px;
+    color: #000;
+}
+
+.menuVideo a:hover{
+    background: linear-gradient(50deg, #000, #fff);
+    filter: blur(0.8px);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
